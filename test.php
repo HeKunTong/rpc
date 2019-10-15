@@ -28,7 +28,6 @@ go(function () use ($rpc) {
             // var_dump($call);
         })
         ->setOnSuccess(function (Response $response, ServiceCall $call) {
-            var_dump(12);
             print_r($response->toArray());
             // print_r($call);
         });

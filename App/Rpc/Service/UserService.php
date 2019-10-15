@@ -21,7 +21,6 @@ class UserService extends AbstractService
     }
 
     public function register() {
-        var_dump('register');
         $this->response()->setResult('register');
     }
 }

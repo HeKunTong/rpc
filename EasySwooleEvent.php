@@ -31,7 +31,7 @@ class EasySwooleEvent implements Event
         $config->setNodeManager(new RedisManager('127.0.0.1'));//注册节点管理器
         $config->getBroadcastConfig()->setSecretKey('lucky');        //设置秘钥
 
-        $rpc = Rpc::getInstance($config);;
+        $rpc = Rpc::getInstance($config);
         $rpc->add(new UserService());  //注册服务
         $rpc->add(new OrderService());
         $rpc->add(new NodeService());
