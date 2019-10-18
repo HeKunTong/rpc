@@ -4,7 +4,7 @@
     "type": "project",
     "license": "",
     "require": {
-        "easyswoole/easyswoole": "3.x-dev",
+        "easyswoole/easyswoole": "3.x",
         "swoole/ide-helper": "dev-master",
         "easyswoole/rpc": "^4.0"
     },
