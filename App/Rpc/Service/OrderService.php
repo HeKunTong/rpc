@@ -19,4 +19,9 @@ class OrderService extends AbstractService
         // TODO: Implement serviceName() method.
         return 'order';
     }
+
+    public function detail() {
+        $params = $this->request()->getArg();
+        $this->response()->setResult(['id' => 1, 'user_id' => 2, 'data' => $params]);
+    }
 }

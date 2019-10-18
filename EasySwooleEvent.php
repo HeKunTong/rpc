@@ -28,7 +28,7 @@ class EasySwooleEvent implements Event
         #####################  rpc 服务1 #######################
         $config = new \EasySwoole\Rpc\Config();
         $config->setServerIp('127.0.0.1');//注册提供rpc服务的ip
-        $config->setNodeManager(new RedisManager('127.0.0.1'));//注册节点管理器
+        $config->setNodeManager(new RedisManager('192.168.2.122'));//注册节点管理器
         $config->getBroadcastConfig()->setSecretKey('lucky');        //设置秘钥
 
         $rpc = Rpc::getInstance($config);
