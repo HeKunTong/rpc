@@ -19,5 +19,12 @@ return [
         ]
     ],
     'TEMP_DIR' => null,
-    'LOG_DIR' => null
+    'LOG_DIR' => null,
+
+    'REDIS' => [
+        'host' => '127.0.0.1',
+        'port' => 6379,
+        'password' => '',
+        'POOL_MAX_NUM' => 10
+    ]
 ];
